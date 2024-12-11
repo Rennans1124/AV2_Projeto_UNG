@@ -16,16 +16,16 @@ class ProdutoCreateView(CreateView):
 	model=Produto
 	template_name='produto_form.html'
 	fields = ['nome','descricao','preco']
-	sucess_url = reverse_lazy('produto_list.html')
+	success_url = reverse_lazy('produto_list.html')
 
 class ProdutoUpdateView(UpdateView):
 	model=Produto
 	template_name='produto_form.html'
 	fields = ['nome','descricao','preco']
-	sucess_url = reverse_lazy('produto-list')
+	success_url = reverse_lazy('produto-list')
 
 class ProdutoDeleteView(DeleteView):
 	model=Produto
 	template_name='produto_confirm_delete.html'
 	fields = ['nome','descricao','preco']
-	sucess_url = reverse_lazy('produto-list')
+	success_url = reverse_lazy('produto-list')
