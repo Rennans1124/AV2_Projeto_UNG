@@ -16,7 +16,7 @@ class ProdutoCreateView(CreateView):
 	model=Produto
 	template_name='produto_form.html'
 	fields = ['nome','descricao','preco']
-	success_url = reverse_lazy('produto_list.html')
+	success_url = reverse_lazy('produto-list')
 
 class ProdutoUpdateView(UpdateView):
 	model=Produto
